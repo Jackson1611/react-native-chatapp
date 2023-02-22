@@ -14,7 +14,7 @@ import {
 } from "react-native";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../config/firebase";
-const backImage = require("../image/backImage.jpg");
+const backImage = require("../image/2.jpg");
 
 export default function Login({ navigation }) {
   const [email, setEmail] = useState("");
@@ -78,17 +78,19 @@ export default function Login({ navigation }) {
             Don't have an account?{" "}
           </Text>
           <TouchableOpacity onPress={() => navigation.navigate("Signup")}>
-            <Text style={{ color: "#3366ff", fontWeight: "600", fontSize: 14 }}>
+            <Text style={{ color: "#006600", fontWeight: "600", fontSize: 14 }}>
               {" "}
               Sign Up
             </Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>
+
       <StatusBar barStyle="light-content" />
     </View>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -97,10 +99,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 36,
     fontWeight: "bold",
-    color: "#3366ff",
+    color: "#006600",
     alignSelf: "center",
     paddingBottom: 24,
-    paddingTop: 70,
+    paddingTop: 40,
   },
   input: {
     backgroundColor: "#F6F7FB",
@@ -112,10 +114,10 @@ const styles = StyleSheet.create({
   },
   backImage: {
     width: "100%",
-    height: 340,
+    height: "100%",
     position: "absolute",
     top: 0,
-    resizeMode: "cover",
+    left: 0,
   },
   whiteSheet: {
     width: "100%",
@@ -123,7 +125,8 @@ const styles = StyleSheet.create({
     position: "absolute",
     bottom: 0,
     backgroundColor: "#fff",
-    borderTopLeftRadius: 60,
+    borderTopLeftRadius: 70,
+    borderTopRightRadius: 70,
   },
   form: {
     flex: 1,
@@ -131,7 +134,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
   },
   button: {
-    backgroundColor: "#3366ff",
+    backgroundColor: "#006600",
     height: 58,
     borderRadius: 10,
     justifyContent: "center",
