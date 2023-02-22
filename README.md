@@ -1,11 +1,18 @@
-# [Project Name]
+# Mysterious chat room 
 
-[Project Name] is a mysterious chat room app that allows users to chat anonymously with each other. The app is built using React Native and Firebase.
+Mysterious chat room is a mysterious chat room app that allows users to chat anonymously with each other. The app is built using React Native and Firebase.
 
 ## Features
 
 - Authentication using Firebase
 - Anonymous chat with other users in real-time
+
+## Technologies Used
+
+- [React Native](https://reactnative.dev/)
+- [Firebase](https://firebase.google.com/)
+- [Expo](https://expo.dev/)
+
 
 ## Setup
 
